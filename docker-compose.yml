@@ -1,0 +1,21 @@
+services:
+  dhanwise:
+    build: .
+    # Loopback only. There is no login: publishing this port exposes the whole ledger.
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - ./data:/data
+    environment:
+      SUB_SCOUT_DB_PATH: /data/dhanwise.db
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/actuator/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 40s

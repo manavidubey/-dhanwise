@@ -1,0 +1,1926 @@
+{
+  "version": "2026.11-seed",
+  "region": "IN",
+  "providers": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "category": "video",
+      "homepage": "https://www.netflix.com/in/",
+      "plans": [
+        {
+          "id": "mobile",
+          "name": "Mobile (480p, Phone/Tablet)",
+          "capability": "video",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": "480p",
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Streaming limited to smartphones and tablets only"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "149.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://help.netflix.com/en/node/24926",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "basic",
+          "name": "Basic (720p HD, 1 Screen)",
+          "capability": "video",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": "720p",
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Single screen at 720p HD"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "199.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://help.netflix.com/en/node/24926",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "standard",
+          "name": "Standard (1080p Full HD, 2 Screens)",
+          "capability": "video",
+          "storageGb": null,
+          "seats": 2,
+          "maxResolution": "1080p",
+          "simultaneousScreens": 2,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "No 4K Ultra HD and limited to 2 concurrent streams"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "499.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://help.netflix.com/en/node/24926",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "premium",
+          "name": "Premium (4K Ultra HD + HDR, 4 Screens + Spatial Audio)",
+          "capability": "video",
+          "storageGb": null,
+          "seats": 4,
+          "maxResolution": "4K",
+          "simultaneousScreens": 4,
+          "hasAds": false,
+          "familySharing": true,
+          "lossTradeoffs": [
+            "Loss of 4K streaming and multi-device downloads"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "649.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://help.netflix.com/en/node/24926",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amazon-prime",
+      "name": "Amazon Prime",
+      "category": "video",
+      "homepage": "https://www.amazon.in/prime",
+      "plans": [
+        {
+          "id": "prime-all-access",
+          "name": "Amazon Prime (All-Access)",
+          "capability": "video",
+          "storageGb": null,
+          "seats": 1,
+          "bundledPerks": [
+            {
+              "capability": "music",
+              "targetProviderId": "amazon-music",
+              "targetPlanId": "amazon-prime-music",
+              "description": "Amazon Prime Music ad-free streaming included with Prime membership",
+              "activationRequired": false,
+              "status": "AVAILABLE_TO_CLAIM",
+              "termsUrl": "https://www.amazon.in/music/prime"
+            },
+            {
+              "capability": "delivery",
+              "targetProviderId": "amazon-delivery",
+              "targetPlanId": "prime-free-shipping",
+              "description": "Free one-day and two-day delivery across millions of eligible items",
+              "activationRequired": false,
+              "status": "AVAILABLE_TO_CLAIM",
+              "termsUrl": "https://www.amazon.in/prime"
+            }
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "299.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.amazon.in/prime",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "1499.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.amazon.in/prime",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "prime-lite",
+          "name": "Prime Lite (Annual)",
+          "capability": "video",
+          "storageGb": null,
+          "seats": 1,
+          "lossTradeoffs": [
+            "Limited to 720p HD on 1 mobile/TV screen with ads; does not include Prime Music or free gaming"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "799.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.amazon.in/prime",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "category": "music",
+      "homepage": "https://www.spotify.com/in/",
+      "plans": [
+        {
+          "id": "individual",
+          "name": "Premium Individual",
+          "capability": "music",
+          "storageGb": null,
+          "seats": 1,
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "119.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.spotify.com/in/premium/",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "1189.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.spotify.com/in/premium/",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "duo",
+          "name": "Premium Duo (2 Accounts)",
+          "capability": "music",
+          "storageGb": null,
+          "seats": 2,
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "149.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.spotify.com/in/premium/",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "family",
+          "name": "Premium Family (Up to 6 Accounts)",
+          "capability": "music",
+          "storageGb": null,
+          "seats": 6,
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "179.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.spotify.com/in/premium/",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "student",
+          "name": "Premium Student",
+          "capability": "music",
+          "storageGb": null,
+          "seats": 1,
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "59.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.spotify.com/in/premium/",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "google-one",
+      "name": "Google One",
+      "category": "storage",
+      "homepage": "https://one.google.com/about/plans",
+      "plans": [
+        {
+          "id": "basic-100",
+          "name": "Basic 100 GB",
+          "capability": "storage",
+          "storageGb": 100,
+          "seats": 5,
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "210.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://one.google.com/about/plans",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "1300.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://one.google.com/about/plans",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ],
+          "bundledPerks": [
+            {
+              "capability": "ai",
+              "targetProviderId": "google-gemini",
+              "targetPlanId": "gemini-advanced",
+              "description": "Google Gemini Advanced and 2 TB shared Google Drive storage",
+              "activationRequired": true,
+              "status": "AVAILABLE_TO_CLAIM",
+              "termsUrl": "https://one.google.com/about/ai-premium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icloud",
+      "name": "iCloud",
+      "category": "storage",
+      "homepage": "https://www.apple.com/in/icloud/",
+      "plans": [
+        {
+          "id": "plus-50",
+          "name": "iCloud+ 50 GB",
+          "capability": "storage",
+          "storageGb": 50,
+          "seats": 1,
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "75.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://support.apple.com/en-in/108047",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "proposed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jio",
+      "name": "Jio",
+      "category": "telecom",
+      "homepage": "https://www.jio.com/",
+      "plans": [
+        {
+          "id": "postpaid",
+          "name": "Postpaid 349",
+          "capability": "telecom",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": "1080p",
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Cancelling terminates mobile data and calling allowances"
+          ],
+          "bundledPerks": [
+            {
+              "capability": "video",
+              "targetProviderId": "disney-hotstar",
+              "targetPlanId": "hotstar/mobile",
+              "description": "Complimentary Disney+ Hotstar Mobile bundled with postpaid plan",
+              "activationRequired": true,
+              "status": "AVAILABLE_TO_CLAIM",
+              "termsUrl": "https://www.jio.com/selfcare/plans/mobility/postpaid-plans/"
+            }
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "349.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.jio.com/selfcare/plans/mobility/postpaid-plans/",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "proposed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT Plus (OpenAI)",
+      "category": "software",
+      "homepage": "https://chatgpt.com",
+      "plans": [
+        {
+          "id": "plus",
+          "name": "ChatGPT Plus",
+          "capability": "ai",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": null,
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Loss of GPT-4o high limits, Canvas, and advanced voice mode"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "1999.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://openai.com/chatgpt/pricing/",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "20.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://openai.com/chatgpt/pricing/",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude Pro (Anthropic)",
+      "category": "software",
+      "homepage": "https://claude.ai",
+      "plans": [
+        {
+          "id": "pro",
+          "name": "Claude Pro",
+          "capability": "ai",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": null,
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Loss of 5x usage on Claude 3.5 Sonnet and Projects"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "1999.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://claude.ai/pricing",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "20.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://claude.ai/pricing",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "category": "ai_coding",
+      "homepage": "https://www.cursor.com",
+      "plans": [
+        {
+          "id": "pro",
+          "name": "Cursor Pro",
+          "capability": "ai_coding",
+          "storageGb": null,
+          "seats": 1,
+          "lossTradeoffs": [
+            "Loss of fast premium models and unlimited slow requests"
+          ],
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "20.00",
+              "taxInclusive": false,
+              "validFrom": "2024-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.cursor.com/pricing",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "1750.00",
+              "taxInclusive": true,
+              "validFrom": "2024-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.cursor.com/pricing",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "annual",
+              "price": "192.00",
+              "taxInclusive": false,
+              "validFrom": "2024-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.cursor.com/pricing",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "16999.00",
+              "taxInclusive": true,
+              "validFrom": "2024-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.cursor.com/pricing",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "premium",
+          "name": "Cursor Premium ($30 Tier)",
+          "capability": "ai_coding",
+          "storageGb": null,
+          "seats": 1,
+          "lossTradeoffs": [
+            "Loss of frontier reasoning models and expanded context windows"
+          ],
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "30.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.cursor.com/pricing",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "2499.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.cursor.com/pricing",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "annual",
+              "price": "288.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.cursor.com/pricing",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "24990.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.cursor.com/pricing",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "category": "software",
+      "homepage": "https://github.com/features/copilot",
+      "plans": [
+        {
+          "id": "individual",
+          "name": "Copilot Individual",
+          "capability": "ai_coding",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": null,
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Loss of IDE code completions and chat in VS Code / JetBrains"
+          ],
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "10.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://github.com/pricing",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "annual",
+              "price": "100.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://github.com/pricing",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "youtube-premium",
+      "name": "YouTube Premium",
+      "category": "video",
+      "homepage": "https://www.youtube.com/premium",
+      "plans": [
+        {
+          "id": "individual",
+          "name": "Premium Individual",
+          "capability": "video",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": "4K",
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Advertisements return on YouTube videos and YouTube Music"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "149.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.youtube.com/premium",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "1490.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.youtube.com/premium",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "family",
+          "name": "Premium Family (Up to 5 members)",
+          "capability": "video",
+          "storageGb": null,
+          "seats": 5,
+          "maxResolution": "4K",
+          "simultaneousScreens": 5,
+          "hasAds": false,
+          "familySharing": true,
+          "lossTradeoffs": [
+            "Advertisements return for all 5 household members"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "299.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.youtube.com/premium",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "disney-hotstar",
+      "name": "Disney+ Hotstar",
+      "category": "video",
+      "homepage": "https://www.hotstar.com",
+      "plans": [
+        {
+          "id": "super",
+          "name": "Super (2 Screens, Full HD)",
+          "capability": "video",
+          "storageGb": null,
+          "seats": 2,
+          "maxResolution": "1080p",
+          "simultaneousScreens": 2,
+          "hasAds": true,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Loss of live sports streaming and Disney catalog"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "899.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.hotstar.com/in/subscribe",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "premium",
+          "name": "Premium (4 Screens, 4K, Ad-Free)",
+          "capability": "video",
+          "storageGb": null,
+          "seats": 4,
+          "maxResolution": "4K",
+          "simultaneousScreens": 4,
+          "hasAds": false,
+          "familySharing": true,
+          "lossTradeoffs": [
+            "Loss of 4K streaming and ad-free viewing"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "299.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.hotstar.com/in/subscribe",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "1499.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.hotstar.com/in/subscribe",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cult-fit",
+      "name": "Cult.fit (Cultpass)",
+      "category": "fitness",
+      "homepage": "https://www.cult.fit",
+      "plans": [
+        {
+          "id": "cultpass-elite",
+          "name": "Cultpass Elite",
+          "capability": "fitness",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": null,
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Loss of access to group classes, gym centres, and at-home workouts"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "1250.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.cult.fit",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "12990.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.cult.fit",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "category": "software",
+      "homepage": "https://www.notion.so",
+      "plans": [
+        {
+          "id": "plus",
+          "name": "Notion Plus",
+          "capability": "productivity",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": null,
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "File upload limited to 5MB, version history reduced to 7 days"
+          ],
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "12.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.notion.so/pricing",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "annual",
+              "price": "120.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.notion.so/pricing",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity Pro",
+      "category": "ai",
+      "homepage": "https://www.perplexity.ai/pro",
+      "plans": [
+        {
+          "id": "pro",
+          "name": "Perplexity Pro",
+          "capability": "ai",
+          "storageGb": null,
+          "seats": 1,
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "20.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.perplexity.ai/pro",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "1650.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.perplexity.ai/pro",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "annual",
+              "price": "200.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.perplexity.ai/pro",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "category": "ai",
+      "homepage": "https://www.midjourney.com",
+      "plans": [
+        {
+          "id": "basic",
+          "name": "Basic Plan",
+          "capability": "ai",
+          "storageGb": null,
+          "seats": 1,
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "10.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://docs.midjourney.com/docs/plans",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "standard",
+          "name": "Standard Plan",
+          "capability": "ai",
+          "storageGb": null,
+          "seats": 1,
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "30.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://docs.midjourney.com/docs/plans",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v0-dev",
+      "name": "v0.dev (Vercel)",
+      "category": "ai_coding",
+      "homepage": "https://v0.dev",
+      "plans": [
+        {
+          "id": "premium",
+          "name": "v0 Premium",
+          "capability": "ai_coding",
+          "storageGb": null,
+          "seats": 1,
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "20.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://v0.dev/pricing",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ms-365",
+      "name": "Microsoft 365",
+      "category": "productivity",
+      "homepage": "https://www.microsoft.com/microsoft-365",
+      "plans": [
+        {
+          "id": "personal",
+          "name": "M365 Personal (1 TB OneDrive + Office)",
+          "capability": "storage",
+          "storageGb": 1000,
+          "seats": 1,
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "489.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.microsoft.com/en-in/microsoft-365/buy/compare-all-microsoft-365-products",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "4899.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.microsoft.com/en-in/microsoft-365/buy/compare-all-microsoft-365-products",
+                "retrievedAt": "2026-10-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ],
+          "bundledPerks": [
+            {
+              "capability": "storage",
+              "targetProviderId": "onedrive",
+              "targetPlanId": "onedrive-1tb",
+              "description": "1 TB secure OneDrive cloud storage included with Office desktop apps",
+              "activationRequired": false,
+              "status": "AVAILABLE_TO_CLAIM",
+              "termsUrl": "https://www.microsoft.com/microsoft-365"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "category": "writing_assistance",
+      "homepage": "https://www.grammarly.com",
+      "plans": [
+        {
+          "id": "premium",
+          "name": "Grammarly Premium",
+          "capability": "writing_assistance",
+          "storageGb": null,
+          "seats": 1,
+          "lossTradeoffs": [
+            "Loss of advanced tone suggestions, plagiarism detector, and full-sentence rewrites"
+          ],
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "30.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.grammarly.com/plans",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "1499.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.grammarly.com/plans",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "annual",
+              "price": "144.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.grammarly.com/plans",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "6999.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.grammarly.com/plans",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meta-quest-plus",
+      "name": "Meta Quest+",
+      "category": "gaming_vr",
+      "homepage": "https://www.meta.com/quest/meta-quest-plus/",
+      "plans": [
+        {
+          "id": "quest-plus-monthly",
+          "name": "Meta Quest+ Monthly",
+          "capability": "gaming_vr",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": null,
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Loss of 2 free monthly curated VR/MR titles and games catalogue access"
+          ],
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "7.99",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.meta.com/quest/meta-quest-plus/",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "699.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.meta.com/quest/meta-quest-plus/",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adobe-creative-cloud",
+      "name": "Adobe Creative Cloud",
+      "category": "creative_design",
+      "homepage": "https://www.adobe.com",
+      "plans": [
+        {
+          "id": "photography-plan",
+          "name": "Photography Plan (Photoshop + Lightroom, 20GB)",
+          "capability": "creative_design",
+          "storageGb": 20,
+          "seats": 1,
+          "maxResolution": null,
+          "simultaneousScreens": 2,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Loss of Photoshop desktop and Lightroom cloud editing"
+          ],
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "19.99",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.adobe.com/creativecloud/plans.html",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "824.82",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.adobe.com/in/creativecloud/plans.html",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "all-apps",
+          "name": "Creative Cloud All Apps (20+ Pro Apps)",
+          "capability": "software",
+          "storageGb": 100,
+          "seats": 1,
+          "maxResolution": null,
+          "simultaneousScreens": 2,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Loss of Premiere Pro, After Effects, Illustrator, Photoshop suite"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "2714.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.adobe.com/in/creativecloud/plans.html",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "antigravity",
+      "name": "Google AI (with Antigravity IDE)",
+      "category": "ai",
+      "homepage": "https://antigravity.google.com",
+      "plans": [
+        {
+          "id": "google-ai-pro",
+          "name": "Google AI Pro (Antigravity Included)",
+          "capability": "ai_coding",
+          "storageGb": 2000,
+          "seats": 1,
+          "maxResolution": null,
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": true,
+          "lossTradeoffs": [
+            "Loss of Gemini 1.5 Pro deep research capabilities (2M token context window), 2 TB Google One cloud storage, and Antigravity IDE workspace quotas (rate-limited requests)"
+          ],
+          "bundledPerks": [
+            {
+              "capability": "storage",
+              "targetProviderId": "google-one",
+              "targetPlanId": "google-one-2tb",
+              "description": "2 TB Google One cloud storage entitlement included with Google AI Pro",
+              "activationRequired": false,
+              "status": "AVAILABLE_TO_CLAIM",
+              "termsUrl": "https://one.google.com/explore-plan/gemini-advanced"
+            },
+            {
+              "capability": "ai_coding",
+              "targetProviderId": "antigravity",
+              "targetPlanId": "antigravity-ide-access",
+              "description": "Antigravity IDE individual access entitlement with monthly agent execution quotas",
+              "activationRequired": false,
+              "status": "AVAILABLE_TO_CLAIM",
+              "termsUrl": "https://antigravity.google.com"
+            }
+          ],
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "19.99",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://one.google.com/explore-plan/gemini-advanced",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "1950.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://one.google.com/explore-plan/gemini-advanced",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airtel",
+      "name": "Airtel",
+      "category": "telecom",
+      "homepage": "https://www.airtel.in",
+      "plans": [
+        {
+          "id": "infinity-postpaid-399",
+          "name": "Infinity Postpaid 399",
+          "capability": "telecom",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": "1080p",
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Cancelling terminates 40GB data rollover and unlimited calling"
+          ],
+          "bundledPerks": [
+            {
+              "capability": "video",
+              "targetProviderId": "airtel-xstream",
+              "targetPlanId": "xstream-play",
+              "description": "Complimentary Airtel Xstream Play Premium (20+ OTT apps bundled)",
+              "activationRequired": true,
+              "status": "AVAILABLE_TO_CLAIM",
+              "termsUrl": "https://www.airtel.in/postpaid"
+            }
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "399.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.airtel.in/postpaid",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "airtel-black-699",
+          "name": "Airtel Black (Fiber + DTH Plan)",
+          "capability": "telecom",
+          "storageGb": null,
+          "seats": 2,
+          "maxResolution": "4K",
+          "simultaneousScreens": 2,
+          "hasAds": false,
+          "familySharing": true,
+          "lossTradeoffs": [
+            "Cancelling terminates unified fiber broadband and postpaid connection"
+          ],
+          "bundledPerks": [
+            {
+              "capability": "video",
+              "targetProviderId": "disney-hotstar",
+              "targetPlanId": "hotstar/super",
+              "description": "Disney+ Hotstar Super (Included only on eligible plans with Postpaid add-on)",
+              "activationRequired": true,
+              "status": "AVAILABLE_TO_CLAIM",
+              "termsUrl": "https://www.airtel.in/airtel-black/terms-and-conditions"
+            }
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "699.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.airtel.in/airtel-black",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vodafone-idea",
+      "name": "Vodafone Idea (Vi)",
+      "category": "telecom",
+      "homepage": "https://www.myvi.in",
+      "plans": [
+        {
+          "id": "vi-max-401",
+          "name": "Vi Max Postpaid 401 (Special Night Binge)",
+          "capability": "telecom",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": "1080p",
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Loss of truly unlimited 12 AM - 6 AM night binge data and 50GB rollover"
+          ],
+          "bundledPerks": [
+            {
+              "capability": "video",
+              "targetProviderId": "sony-liv",
+              "targetPlanId": "sonyliv-mobile",
+              "description": "Sony LIV Mobile or Disney+ Hotstar 12-month access bundled with Vi Max",
+              "activationRequired": true,
+              "status": "AVAILABLE_TO_CLAIM",
+              "termsUrl": "https://www.myvi.in/postpaid"
+            }
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "401.00",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.myvi.in/postpaid",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zomato-gold",
+      "name": "Zomato Gold",
+      "category": "food_and_dining",
+      "homepage": "https://www.zomato.com",
+      "plans": [
+        {
+          "id": "gold",
+          "name": "Zomato Gold Membership",
+          "capability": "food_delivery",
+          "storageGb": null,
+          "seats": 1,
+          "lossTradeoffs": [
+            "Loss of zero delivery fee on orders above ₹199 and dining discounts up to 40%"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "quarterly",
+              "price": "99.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.zomato.com/gold",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "299.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.zomato.com/gold",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "swiggy-one",
+      "name": "Swiggy One",
+      "category": "food_and_dining",
+      "homepage": "https://www.swiggy.com",
+      "plans": [
+        {
+          "id": "one",
+          "name": "Swiggy One Membership",
+          "capability": "food_delivery",
+          "storageGb": null,
+          "seats": 1,
+          "lossTradeoffs": [
+            "Loss of unified free delivery across Swiggy Food, Instamart, and Dineout"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "quarterly",
+              "price": "149.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.swiggy.com/swiggy-one",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "899.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.swiggy.com/swiggy-one",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linkedin-premium",
+      "name": "LinkedIn Premium",
+      "category": "professional_network",
+      "homepage": "https://www.linkedin.com/premium",
+      "plans": [
+        {
+          "id": "career",
+          "name": "Premium Career",
+          "capability": "professional_networking",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": null,
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Loss of 5 InMail credits, who viewed your profile (365 days), and competitive applicant insights"
+          ],
+          "offers": [
+            {
+              "region": "US",
+              "currency": "USD",
+              "billingPeriod": "monthly",
+              "price": "39.99",
+              "taxInclusive": false,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.linkedin.com/premium/products",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "1999.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.linkedin.com/premium/products",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            },
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "annual",
+              "price": "14999.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.linkedin.com/premium/products",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        },
+        {
+          "id": "business-monthly",
+          "name": "Premium Business (15 InMails + Company Insights)",
+          "capability": "professional_networking",
+          "storageGb": null,
+          "seats": 1,
+          "maxResolution": null,
+          "simultaneousScreens": 1,
+          "hasAds": false,
+          "familySharing": false,
+          "lossTradeoffs": [
+            "Loss of 15 InMail credits, unlimited people browsing, and full business growth insights"
+          ],
+          "offers": [
+            {
+              "region": "IN",
+              "currency": "INR",
+              "billingPeriod": "monthly",
+              "price": "3499.00",
+              "taxInclusive": true,
+              "validFrom": "2026-01-01",
+              "validTo": null,
+              "source": {
+                "url": "https://www.linkedin.com/premium/products",
+                "retrievedAt": "2026-11-01",
+                "reviewStatus": "reviewed",
+                "reviewer": "seed"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

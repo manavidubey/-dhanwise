@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: dhanwise
+  datasource:
+    # SQLite pragmas are applied per connection. pool size is 1: one writer, by design.
+    url: jdbc:sqlite:${SUB_SCOUT_DB_PATH:./subscout.db}?journal_mode=WAL&busy_timeout=5000&foreign_keys=true&synchronous=NORMAL
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      maximum-pool-size: 1
+      minimum-idle: 1
+      connection-timeout: 10000
+  jooq:
+    sql-dialect: SQLITE
+  servlet:
+    multipart:
+      max-file-size: 8MB
+      max-request-size: 8MB
+
+server:
+  # Loopback only. A local-first financial app must not be reachable from the LAN by default.
+  address: ${SUB_SCOUT_BIND:127.0.0.1}
+  port: ${SUB_SCOUT_PORT:8080}
+  error:
+    include-message: never
+    include-stacktrace: never
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+
+logging:
+  level:
+    root: INFO
+    dev.subscout: INFO

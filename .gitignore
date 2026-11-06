@@ -1,0 +1,14 @@
+target/
+node_modules/
+web/dist/
+src/main/resources/static/
+data/
+*.db
+*.db-wal
+*.db-shm
+.DS_Store
+.env
+.env.local
+*.log
+.idea/
+.vscode/
